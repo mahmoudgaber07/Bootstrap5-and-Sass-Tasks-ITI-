@@ -1,2 +1,2 @@
-# Responsive-Tasks-ITI-
-Iti bootstrap , sass and mediaQueries Tasks
+# Responsive-Tasks-ITI
+Iti bootstrap , sass and media queries Tasks
