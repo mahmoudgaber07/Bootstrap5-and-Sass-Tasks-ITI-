@@ -1,0 +1,278 @@
+@import 'variable';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+//general
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+%headers{
+    font-size: 2*$fontSize;
+}
+%texts{
+    color:$grayCol ;
+    font-size: $fontSize; 
+}
+//nav
+.header{
+    background-image: url('../assets/img/banner/home-banner.jpg');
+
+}
+.navbar{
+    color: $whiteCol;
+    padding: 2 * $mainPadding;
+    .nav_links{
+            .nav-item{
+                list-style: none;
+                display: inline-block;
+                padding-left: $mainPadding;
+                .nav-link{
+                    color: $whiteCol !important;
+                    cursor: pointer;
+                    font-size: $fontSize;
+                    font-weight: bold;
+                    transition: all .5s ease-in-out;
+                   &:hover{
+                        background-color: $secondaryCol;
+                        border-radius: 1rem;
+                        font-size: 1.1*$fontSize;
+                   }
+                }
+            }
+    }
+    .navbar-toggler{
+      font-size: $fontSize;
+      border: none !important;
+      &:focus{
+          color: $whiteCol;
+      }
+    .navbar-toggler-icon{
+        color: $whiteCol;
+        font-size: 1.5*$fontSize;
+    }
+}
+}
+//bannar
+.bannar{
+    .left-bannar{
+        .explore-btn{
+            padding: $mainPadding;
+            width: 250px;
+        }
+        .bannar-header{
+            color: $whiteCol;
+        }
+        .banner-text{
+            color: $whiteCol;
+        }
+    }
+    .right-bannar{
+        .elm-btn{
+            padding: $mainPadding;
+            width: 250px;
+        }
+    }
+}
+//features
+.features{
+        .feature-header{
+            @extend %headers;
+        }
+        .feature-text{
+            color: $grayCol;
+        }
+}
+//maintance
+.maintance{
+    border-radius: 10px;
+        .maintance-content{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .maintance-header{
+                font-size: 1.5*$fontSize;
+            }
+            .maintance-text{
+                color:$grayCol ;
+                font-size: $fontSize;
+                width: 80%;
+            }
+    }
+}
+//interior
+.interior{
+    .interior-content{
+        .interior-header{
+            @extend %headers;
+        }
+        .interior-text{
+            color:$grayCol ;
+            font-size: $fontSize;
+        }
+        .details-btn{
+            background-color: $primaryCol;
+            color: $whiteCol;
+        }
+    }
+}
+//video
+.video{
+    .video-content{
+        .video-icon-img{
+            transform: translate(-50%,-50%);
+        }
+        }
+}
+//price Table
+.price-table{
+    .price-table-header{
+        @extend %headers;
+    }
+    .price-table-text{
+        @extend %texts;
+    }
+}
+//price
+.pricing{
+    .pricing-content{
+        .pricing{
+            background-color: $whiteCol;
+            padding: 2rem;
+            .pricing-header{
+                font-size: 1.5*$fontSize;
+            }
+            .pricing-text{
+                @extend %texts;
+            }
+            .plan-list{
+                line-height: 3rem;
+            }
+            .purchase-btn{
+                .btn{
+                    border:1px solid $secondaryCol;
+                    transition: all .5s ease-in-out;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: $secondaryCol;
+                        color: $whiteCol;
+                    }
+                }
+            }
+        }
+    }
+}
+//scrennshots
+.screen-shot{
+    .screen-shot-header{
+        @extend %headers;
+    }
+    .screen-shot-text{
+        @extend %texts;
+    }
+}
+//testimonials
+.testimonials{
+    .testimonials-header{
+        @extend %headers;
+    }
+    .testimonials-text{
+        @extend %texts;
+    }
+    .testimonials-card{
+        max-width: 540px;
+        margin: auto;
+        background-color: $whiteCol;
+    }
+}
+//download
+.download{
+    background-color: $primaryCol;
+    color: $whiteCol;
+    .download-header{
+        @extend %headers;
+    }
+    .download-text{
+        @extend %texts;
+    }
+    .android{
+        .android-content{
+            border: 1px solid $whiteCol;
+            transition: all .5s ease-in-out;
+            &:hover{
+                background-color: $darkCol;
+                color: $whiteCol;
+                border: 1px solid $secondaryCol;
+                cursor: pointer;
+            }
+            .android-icon{
+                font-size: 2*$fontSize;
+                color: $whiteCol;
+            }
+        }
+    }
+    .apple{
+        .apple-content{
+            border: 1px solid $whiteCol;
+            justify-content: end;
+            transition: all .5s ease-in-out;
+            &:hover{
+                background-color: $darkCol;
+                color: $whiteCol;
+                border: 1px solid $secondaryCol;
+                cursor: pointer;
+            }
+            .apple-icon{
+                font-size: 2*$fontSize;
+                color: $whiteCol;
+            }
+        }
+    }
+}
+//news
+.news{
+    .news-header{
+        @extend %headers;
+    }
+    .news-text{
+        @extend %texts;
+    }
+    .news-content{
+        .news-card{
+            background-color: $whiteCol;
+            .news-date{
+                background-color: #fff;
+            }
+            .news-footer{
+                i{
+                    color: $grayCol;
+                }
+            }
+        }
+    }
+}
+//footer
+.footer{
+    background-color: $darkCol;
+    color: $whiteCol;
+    .newsletter{
+        .btn{
+            background-color: $whiteCol;
+            color: $darkCol;
+            transition: all .5s ease-in-out;
+        &:hover{
+            background-color: $darkCol;
+            color: $whiteCol;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        }
+    }
+    .copyright-social{
+        .social{
+            .social-icon{
+                i{
+                    font-size: 3*$fontSize;
+                }
+            }
+        }
+    }
+}

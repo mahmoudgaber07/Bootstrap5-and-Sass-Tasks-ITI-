@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.features .feature-header, .interior .interior-content .interior-header, .price-table .price-table-header, .screen-shot .screen-shot-header, .testimonials .testimonials-header, .download .download-header, .news .news-header {
+  font-size: 32px; }
+
+.price-table .price-table-text, .pricing .pricing-content .pricing .pricing-text, .screen-shot .screen-shot-text, .testimonials .testimonials-text, .download .download-text, .news .news-text {
+  color: #737373;
+  font-size: 16px; }
+
+.header {
+  background-image: url("../assets/img/banner/home-banner.jpg"); }
+
+.navbar {
+  color: #F2F2F2;
+  padding: 32px; }
+  .navbar .nav_links .nav-item {
+    list-style: none;
+    display: inline-block;
+    padding-left: 16px; }
+    .navbar .nav_links .nav-item .nav-link {
+      color: #F2F2F2 !important;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all .5s ease-in-out; }
+      .navbar .nav_links .nav-item .nav-link:hover {
+        background-color: #9D49F2;
+        border-radius: 1rem;
+        font-size: 17.6px; }
+  .navbar .navbar-toggler {
+    font-size: 16px;
+    border: none !important; }
+    .navbar .navbar-toggler:focus {
+      color: #F2F2F2; }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      color: #F2F2F2;
+      font-size: 24px; }
+
+.bannar .left-bannar .explore-btn {
+  padding: 16px;
+  width: 250px; }
+
+.bannar .left-bannar .bannar-header {
+  color: #F2F2F2; }
+
+.bannar .left-bannar .banner-text {
+  color: #F2F2F2; }
+
+.bannar .right-bannar .elm-btn {
+  padding: 16px;
+  width: 250px; }
+
+.features .feature-text {
+  color: #737373; }
+
+.maintance {
+  border-radius: 10px; }
+  .maintance .maintance-content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .maintance .maintance-content .maintance-header {
+      font-size: 24px; }
+    .maintance .maintance-content .maintance-text {
+      color: #737373;
+      font-size: 16px;
+      width: 80%; }
+
+.interior .interior-content .interior-text {
+  color: #737373;
+  font-size: 16px; }
+
+.interior .interior-content .details-btn {
+  background-color: #AC32FE;
+  color: #F2F2F2; }
+
+.video .video-content .video-icon-img {
+  transform: translate(-50%, -50%); }
+
+.pricing .pricing-content .pricing {
+  background-color: #F2F2F2;
+  padding: 2rem; }
+  .pricing .pricing-content .pricing .pricing-header {
+    font-size: 24px; }
+  .pricing .pricing-content .pricing .plan-list {
+    line-height: 3rem; }
+  .pricing .pricing-content .pricing .purchase-btn .btn {
+    border: 1px solid #9D49F2;
+    transition: all .5s ease-in-out;
+    font-weight: bold; }
+    .pricing .pricing-content .pricing .purchase-btn .btn:hover {
+      background-color: #9D49F2;
+      color: #F2F2F2; }
+
+.testimonials .testimonials-card {
+  max-width: 540px;
+  margin: auto;
+  background-color: #F2F2F2; }
+
+.download {
+  background-color: #AC32FE;
+  color: #F2F2F2; }
+  .download .android .android-content {
+    border: 1px solid #F2F2F2;
+    transition: all .5s ease-in-out; }
+    .download .android .android-content:hover {
+      background-color: #262626;
+      color: #F2F2F2;
+      border: 1px solid #9D49F2;
+      cursor: pointer; }
+    .download .android .android-content .android-icon {
+      font-size: 32px;
+      color: #F2F2F2; }
+  .download .apple .apple-content {
+    border: 1px solid #F2F2F2;
+    justify-content: end;
+    transition: all .5s ease-in-out; }
+    .download .apple .apple-content:hover {
+      background-color: #262626;
+      color: #F2F2F2;
+      border: 1px solid #9D49F2;
+      cursor: pointer; }
+    .download .apple .apple-content .apple-icon {
+      font-size: 32px;
+      color: #F2F2F2; }
+
+.news .news-content .news-card {
+  background-color: #F2F2F2; }
+  .news .news-content .news-card .news-date {
+    background-color: #fff; }
+  .news .news-content .news-card .news-footer i {
+    color: #737373; }
+
+.footer {
+  background-color: #262626;
+  color: #F2F2F2; }
+  .footer .newsletter .btn {
+    background-color: #F2F2F2;
+    color: #262626;
+    transition: all .5s ease-in-out; }
+    .footer .newsletter .btn:hover {
+      background-color: #262626;
+      color: #F2F2F2; }
+    .footer .newsletter .btn:focus {
+      box-shadow: none; }
+  .footer .copyright-social .social .social-icon i {
+    font-size: 48px; }
